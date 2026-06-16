@@ -10,14 +10,7 @@ const attractionRoutes = require("./routes/attractionRoutes");
 const hotelRoutes = require("./routes/hotelRoutes");
 const app = express();
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://travelwise.vercel.app",
-    ],
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use("/api/hotels", hotelRoutes);
 app.use("/api/weather", weatherRoutes);
