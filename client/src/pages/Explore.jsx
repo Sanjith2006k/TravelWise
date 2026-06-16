@@ -26,6 +26,10 @@ function Explore() {
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const normalizedSearchCity = city?.trim().toLowerCase();
+  const showEasterEgg =
+    normalizedSearchCity === "tirunelveli" ||
+    normalizedSearchCity === "tirunveli";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -160,6 +164,22 @@ function Explore() {
           />
         </div>
 
+        {showEasterEgg && (
+          <div className="mb-10 flex justify-center">
+            <button
+              onClick={() => {
+                const audio = document.getElementById("tirunelveli-audio");
+
+                audio.currentTime = 0;
+                audio.play();
+              }}
+              className="animate-bounce rounded-full bg-yellow-400 px-8 py-4 text-lg font-bold text-black shadow-xl transition-all hover:scale-110"
+            >
+              yelaii !!!
+            </button>
+          </div>
+        )}
+
         {/* Attractions */}
         {attractions.length > 0 && (
           <AnimatedSection>
@@ -198,6 +218,9 @@ function Explore() {
           </section>
         </AnimatedSection>
       </div>
+      <audio id="tirunelveli-audio">
+        <source src="/easter_egg.mp3" type="audio/mpeg" />
+      </audio>
     </div>
   );
 }
