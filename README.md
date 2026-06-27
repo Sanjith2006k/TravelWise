@@ -101,4 +101,4 @@ npm run dev
 
 ## License
 
-This project was developed for educational and portfolio purposes.
+S Sanjith Kumar
