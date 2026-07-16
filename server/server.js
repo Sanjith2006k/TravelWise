@@ -13,6 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api/hotels", hotelRoutes);
+
 app.use("/api/weather", weatherRoutes);
 app.use("/api/country", countryRoutes);
 app.use("/api/image", imageRoutes);
