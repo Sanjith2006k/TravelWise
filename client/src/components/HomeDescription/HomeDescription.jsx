@@ -23,9 +23,12 @@ function HomeDescription() {
     <section className="bg-zinc-950 px-6 py-20 text-white">
       <div className="mx-auto max-w-6xl">
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-wide text-cyan-300">
-            About TravelWise
-          </p>
+          <div className="flex items-center gap-2">
+            <img src="/logo.svg" alt="TravelWise Logo" className="w-6 h-6" />
+            <p className="text-sm font-semibold uppercase tracking-wide text-cyan-300">
+              About TravelWise
+            </p>
+          </div>
           <h2 className="mt-3 text-4xl font-bold">Plan smarter city trips</h2>
           <p className="mt-5 text-lg leading-8 text-gray-300">
             TravelWise helps you search any city and instantly understand what

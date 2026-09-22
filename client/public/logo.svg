@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Gradients for depth and modern feel -->
+    <linearGradient id="eyeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="needleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Navigational Elements -->
+  <!-- Thin outer boundary ring -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#1e293b" stroke-width="2" opacity="0.3"/>
+
+  <!-- Dashed inner map ring -->
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#1e293b" stroke-width="4" stroke-dasharray="4 8" opacity="0.5"/>
+
+  <!-- Geometric Cardinal Direction Markers (N, S, E, W) -->
+  <path d="M 97 10 L 103 10 L 100 22 Z" fill="#1e293b"/>
+  <path d="M 97 190 L 103 190 L 100 178 Z" fill="#1e293b"/>
+  <path d="M 10 97 L 10 103 L 22 100 Z" fill="#1e293b"/>
+  <path d="M 190 97 L 190 103 L 178 100 Z" fill="#1e293b"/>
+
+  <!-- The Eye of Wisdom -->
+  <path d="M 35 100 Q 100 35 165 100 Q 100 165 35 100 Z" fill="none" stroke="url(#eyeGradient)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- The Travel Compass Needle (Functions as the Eye's Iris/Pupil) -->
+  <!-- Top Half (Vibrant Gold) -->
+  <polygon points="100,45 118,100 82,100" fill="url(#needleGradient)"/>
+  
+  <!-- Bottom Half (Deep Navy) -->
+  <polygon points="100,155 118,100 82,100" fill="#1e293b"/>
+
+  <!-- Center Pivot / Pupil Highlight -->
+  <circle cx="100" cy="100" r="8" fill="#ffffff" stroke="#1e293b" stroke-width="3"/>
+</svg>
